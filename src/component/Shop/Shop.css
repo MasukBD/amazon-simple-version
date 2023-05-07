@@ -20,3 +20,39 @@
 .order-header {
     text-align: center;
 }
+
+@media only screen and (max-width: 576px) {
+    .shop-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cart-container {
+        order: 1;
+    }
+
+    .products {
+        order: 2;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .shop-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cart-container {
+        order: 1;
+    }
+
+    .products {
+        order: 2;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
