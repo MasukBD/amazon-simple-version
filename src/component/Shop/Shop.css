@@ -1,0 +1,14 @@
+.shop-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.cart-container {
+    background-color: orange;
+}
+
+.order-header {
+    text-align: center;
+}
