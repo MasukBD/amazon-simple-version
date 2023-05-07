@@ -5,8 +5,16 @@
     padding: 0 10px;
 }
 
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 20px;
+}
+
 .cart-container {
     background-color: orange;
+    max-height: 720px;
 }
 
 .order-header {
