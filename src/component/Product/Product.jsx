@@ -1,8 +1,11 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './Product.css';
 
 const Product = (props) => {
     const { name, img, seller, price, ratings } = props.product;
+    const handleCartItem = props.handleCart;
     return (
         <div className='product'>
             <div className="product-info">
@@ -12,7 +15,7 @@ const Product = (props) => {
                 <p className='seller'>Manufacturer: {seller}</p>
                 <p className='ratings'>Ratings: {ratings}</p>
             </div>
-            <button className='cart-button'>Add To Cart</button>
+            <button onClick={() => { handleCartItem(props.product) }} className='cart-button'>Add To Cart</button>
         </div>
     );
 };

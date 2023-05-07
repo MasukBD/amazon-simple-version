@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import './Shop.css';
 import Product from '../Product/Product';
@@ -9,6 +10,11 @@ const Shop = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
+
+    const handleAddToCart = product => {
+        console.log(product);
+    }
+
     return (
         <div>
             <div className='shop-container'>
@@ -16,8 +22,10 @@ const Shop = () => {
                     <h3>Your Produts Are Here!!</h3>
                     <div className='products-container'>
                         {
-                            products.map(p => <Product key={p.id}
+                            products.map(p => <Product
+                                key={p.id}
                                 product={p}
+                                handleCart={handleAddToCart}
                             ></Product>)
                         }
                     </div>
