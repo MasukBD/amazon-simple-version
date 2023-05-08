@@ -1,0 +1,8 @@
+.cart {
+    text-align: center;
+    background-color: rgb(252, 206, 122);
+    border-radius: 5px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}

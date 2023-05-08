@@ -12,15 +12,6 @@
     margin: 0 20px;
 }
 
-.cart-container {
-    background-color: orange;
-    max-height: 720px;
-}
-
-.order-header {
-    text-align: center;
-}
-
 @media only screen and (max-width: 576px) {
     .shop-container {
         grid-template-columns: repeat(1, 1fr);
